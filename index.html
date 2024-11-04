@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+    
+ <section id="container ">
+
+<!-- header page -->
+    <div class="header relative" >
+      <nav class="flex justify-between item-center">
+        <img class="w-44 ml-32 mt-9" src="./images/netflix logo.png" alt="">
+        <div class="navbtns mt-9 mr-32">
+          <form class="inline-block mr-2">
+            <select class="bg-transparent border rounded py-1 px-2.5 " id="loc">
+              <option class="text-black" value="">English</option>
+              <option class="text-black" value="">हिंदी</option>
+            </select>
+          </form>
+          <button class="btn1  bg-red-600 rounded py-1 px-2.5">Sign In</button>
+        </div>
+      </nav>
+
+      <div class="header_details justify-center absolute w-full">
+        <h1 class="main_head">Unlimited movies, TV <br> shows and more</h1>
+        <h6 class="sub_head">Starts at ₹149. Cancel at any time.</h6>
+        <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
+        <form class="mt-5 flex justify-center" action="">
+          <input class="Email bg-transparent border-2 rounded py-2.5 px-1 pr-32 ps-3 " type="email" placeholder="Email address">
+          <a class="Started bg-red-600 py-3 px-2 rounded  ms-2" href="#"> Get Started &#62;</a>
+        </form>
+      </div>
+      
+    </div>
+    
+
+    <!-- trending movies -->
+    <div class="trendingNow mx-36 my-20 ">
+      <h1 class="mb-5 font-semibold text-2xl">Trending Now</h1>
+      <div class="movie mb-5">
+        <select class="bg-transparent border rounded py-1 px-2.5 mr-4">
+          <option class="text-black" value="">India</option>
+          <option class="text-black" value="">Global</option>
+        </select>
+        <select class="bg-transparent border rounded py-1 px-2.5">
+          <option class="text-black" value="">Movies</option>
+          <option class="text-black" value="">Tv Shows</option>
+        </select>
+      </div>
+      <div class="trendingMovies relative flex item-center ms-8 mt-8">
+        <div class="movieDetails ">
+          <img class="movieImages rounded-xl" src="https://upload.wikimedia.org/wikipedia/en/5/5b/Khel_Khel_Mein_poster.jpg" alt="">
+          <h1 class="TrendingNO ">1</h1>
+          <h1 class="RecentlyAdded bg-red-600 bolder text-center">Recently added</h1>
+        </div>
+
+        <div class="movieDetails "> 
+          <img class="movieImages rounded-xl" src="https://image.tmdb.org/t/p/original/zLbnXZWIzKU9pmrGdzuwkHluGz9.jpg" alt="">
+          <h1 class="TrendingNO ">2</h1>
+          <h1 class="RecentlyAdded bg-red-600 bolder text-center">Recently added</h1>
+        </div>
+
+        <div class="movieDetails ">
+          <img class="movieImages rounded-xl" src="https://upload.wikimedia.org/wikipedia/en/e/e6/Family_Pack_2024_film_poster.jpg" alt="">
+          <h1 class="TrendingNO ">3</h1>
+          <h1 class="RecentlyAdded bg-red-600 bolder text-center">Recently added</h1>
+        </div>
+
+        <div class="movieDetails ">
+          <img class="movieImages rounded-xl" src="https://sportshub.cbsistatic.com/i/2023/04/27/d968966a-5b2c-4409-b468-d1c9f8629299/transformers-rise-of-the-beasts-posters-scourge.jpg?auto=webp&width=2025&height=3000&crop=0.675:1,smart" alt="">
+          <h1 class="TrendingNO ">4</h1>
+        </div>
+
+        <div class="movieDetails ">
+          <img class="movieImages rounded-xl" src="https://s.yimg.com/fz/api/res/1.2/HLeo64cTz7RVwtCtju6XeQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MTk0/https://s.yimg.com/zb/imgv1/252829bb-4d65-39ea-87bc-7779007687e2/t_500x300" alt="">
+          <h1 class="TrendingNO ">5</h1>
+          <h1 class="RecentlyAdded bg-red-600 bolder text-center">Recently added</h1>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- More reason to join -->
+     <div id="joinReason" class="mx-36 my-20">
+      <h1 class="text-2xl font-semibold">More reasons to join</h1>
+      <div class="Reasons flex ">
+
+        <div class="details mt-5 p-3 rounded-2xl mr-5">
+          <h2 class="text-xl font-semibold pt-4 mb-4  ">Enjoy on your TV</h2>
+          <p>Watch on smart TVs, PlayStation,<br> Xbox, Chromecast, Apple TV, Blu-ray <br> players and more.</p>
+          <img class="w-24 float-right mt-16" src="./images/dsktp1.png" alt="">
+        </div>
+        <div class="details mt-5 p-3 rounded-2xl mr-5">
+          <h2 class="text-xl font-semibold pt-4 mb-4  ">Download your shows to watch offline</h2>
+          <p>Save your favourites easily and always have something to watch.</p>
+          <img class="w-20 float-right mt-16" src="./images/dwnld.png" alt="">
+        </div>
+        <div class="details mt-5 p-3 rounded-2xl mr-5">
+          <h2 class="text-xl font-semibold pt-4 mb-4  ">Watch everywhere</h2>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+          <img class="w-24 float-right mt-16" src="./images/scope.png" alt="">
+        </div>
+        <div class="details mt-5 p-3 rounded-2xl mr-5">
+          <h2 class="text-xl font-semibold pt-4 mb-4  ">Create profiles for kids</h2>
+          <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+          <img class="w-24 float-right mt-16" src="./images/kid.png" alt="">
+        </div>
+
+      </div>
+     </div>
+
+    <!--frequently asked question  -->
+      <div id="frequentlyQuestion" class="mx-36 my-20">
+        <h1 class="Qhead text-2xl font-semibold mb-5">Frequently Asked Questions</h1>
+        <div class="questions">
+          <ul class="Accordion">
+            <li class="accordionList">
+              <input type="radio" name="Accordion" id="first">
+              <label class="faqn" for="first">What is Netflix?</label>
+              <div class="Qcontent">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, <br> documentaries and more – on thousands of internet-connected devices. <br><br>
+
+                  You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. <br> There's always something new to discover, and new TV shows and movies are added every week!</p>
+              </div>
+            </li>
+
+            <li class="accordionList">
+              <input type="radio" name="Accordion" id="second">
+              <label class="faqn" for="second">How much does Netflix cost?</label>
+              <div class="Qcontent">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts</p>
+              </div>
+            </li>
+
+            <li class="accordionList">
+              <input type="radio" name="Accordion" id="third">
+              <label class="faqn" for="third">How much does Netflix cost?</label>
+              <div class="Qcontent">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts</p>
+              </div>
+            </li>
+
+            <li class="accordionList">
+              <input type="radio" name="Accordion" id="fourth">
+              <label class="faqn" for="fourth">How much does Netflix cost?</label>
+              <div class="Qcontent">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts</p>
+              </div>
+            </li>
+
+            <li class="accordionList">
+              <input type="radio" name="Accordion" id="fifth">
+              <label class="faqn" for="fifth">How much does Netflix cost?</label>
+              <div class="Qcontent">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts</p>
+              </div>
+            </li>
+
+            <li class="accordionList">
+              <input type="radio" name="Accordion" id="sixth">
+              <label class="faqn" for="sixth">Is Netflix good for kids ?</label>
+              <div class="Qcontent">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                  <br><br>
+                  Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="membership text-center">
+            <p class="memdetails mt-16 mb-4">Ready to watch? Enter your email to create or restart your membership</p>
+            <input class="bg-transparent border-2 rounded py-3.5 px-1 pr-32 ps-3"  type="email" placeholder="Email address">
+            <button class="Started bg-red-600 py-3 px-2 rounded  ms-2">Get Started &#62;</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- footer -->
+      <div class="footer ms-36 ">
+        <h5 class="mb-10">Questions?<a href="">Call 000-800-919-1694</a></h5>
+        <div class="listdivs flex">
+          <div class="lists mr-44">
+            <ul>
+              <li class="mb-2 underline text-stone-400"><a href="#">FAQ</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Investor Relations</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Privacy</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+
+          <div class="lists mr-44">
+            <ul>
+              <li class="mb-2 underline text-stone-400"><a href="#">Help Center</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Jobs</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Cookie Preferences</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Legal Notices</a></li>
+            </ul>
+          </div>
+
+          <div class="lists mr-44 ">
+            <ul>
+              <li class="mb-2 underline text-stone-400"><a href="#">Account</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Way to Watch</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Corporate Information</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Only on Netflix</a></li>
+            </ul>
+          </div>
+
+          <div class="lists mr-44">
+            <ul>
+              <li class="mb-2 underline text-stone-400"><a href="#">Media Center</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Terms of Use</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Contact Us</a></li>
+              <li class="mb-2 underline text-stone-400"><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+        </div>
+        <select class="bg-transparent border rounded py-1 px-2.5 mt-5" id="loc">
+          <option class="text-black" value="">English</option>
+          <option class="text-black" value="">हिंदी</option>
+        </select>
+        <br><br>
+        <h6 class="mt-5 text-stone-400">Netflix India</h6>
+      </div>
+    <br><br><br><br><br>
+ </section>
+</body>
+<script>
+    AOS.init();
+  </script>
+</html>

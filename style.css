@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.frandroid.com/wp-content/uploads/2022/10/netflix-octobre-contenus-2022.jpg);
+    background-size: cover;
+    color: white;
+    border-radius: 0px 0px -500px -500px;
+}
+.header_details{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 60px;
+}
+.main_head{
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+}
+.sub_head{
+    font-size:19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Email{
+    border-width: 1px;
+    background-color:rgba(0,0,0,0.5);
+}
+.Started{
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.7s;
+}
+.Started:hover{
+    background-color: rgb(196, 6, 6);
+}
+/* trending movies */
+.movieDetails{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin-right: 50px;
+    transition: all 0.3s;
+}
+.movieDetails:hover{
+    transform: scale(1.07);
+}
+.movieImages{
+    width: 100%;
+    height: 100%;
+}
+.TrendingNO{
+    font-size: 100px;
+    font-weight: 750;
+    position: absolute;
+    top: 120px;
+    left:-25px;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    z-index: 1;
+}
+.RecentlyAdded{
+    border-radius: 10px 10px 0px 0px;
+    width: 150px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0.5px;
+    left: 20px;
+}
+/* More reason to join */
+.details{
+width: 300px;
+height: 300px;
+background-image: linear-gradient(to bottom right , blue,rgb(18, 2, 90), rgb(1, 1, 82), rgb(2, 2, 50), rgb(0, 0, 32),rgba(255, 10, 7));
+}
+
+/* faq */
+.accordionList{
+    list-style: none;
+    margin-bottom: 5px;  
+}
+.faqn{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    background-color: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    font-size: 20px;
+}
+.faqn::after{
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.Qcontent{
+    background-color: #303030;
+    padding: 0px 20px;
+    font-size: 20px;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.Accordion input[type="radio"]:checked+ .faqn + .Qcontent{
+    max-height: 600px;
+    padding: 30px 50px;
+    word-spacing: 3x;
+}
+
